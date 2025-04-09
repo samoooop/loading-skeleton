@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .suggested-courses-card {
+    max-width: 313px;
+    width: 100%;
+    height: 394px;
+    background: #f7f7f9;
+    padding: 24px 0px 24px 0px;
+    border-radius: 20px;
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+      0px 1px 2px rgba(16, 24, 40, 0.06);
+  }
+  .suggested-courses-card .description {
+    margin: 0px 24px;
+    padding: 0px 0px 80px 0px;
+  }
+  
+  .suggested-courses-card .description .line {
+    background: #d0d5dd;
+    border-radius: 4px;
+    height: 24px;
+    margin: 0px 0px 16px 0px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .suggested-courses-card .description .line-1-1 {
+    width: calc(100%);
+  }
+  .suggested-courses-card .description .line-2-1 {
+    width: calc(100% - 30%);
+  }
+  
+  .suggested-courses-card .description .line-3-1 {
+    width: calc(100% - 10%);
+  }
+  
+  .suggested-courses-card .description .line-1-2 {
+    width: calc(100% - 45%);
+  }
+  .suggested-courses-card .description .line-2-2 {
+    width: calc(100% - 65%);
+  }
+  
+  .suggested-courses-card .description .line-3-2 {
+    width: calc(100% - 65%);
+  }
+  
+  .suggested-courses-card .description .line-4-2 {
+    width: calc(100% - 65%);
+  }
+  
+  .suggested-courses-card .description .line::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      #d0d5dd 0%,
+      rgba(0, 0, 0, 0.07) 20%,
+      #d0d5dd 40%,
+      #d0d5dd 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 450px 400px;
+    animation: shimmer 1s linear infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -450px 0;
+    }
+    100% {
+      background-position: 450px 0;
+    }
+  }
+  
+  /* Available job card styles */
+  
+  .available-job-card {
+    max-width: 313px;
+    width: 100%;
+    height: 224px;
+    background: #f7f7f9;
+    padding: 24px 0px 24px 0px;
+    border-radius: 20px;
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+      0px 1px 2px rgba(16, 24, 40, 0.06);
+  }
+  .available-job-card .description {
+    margin: 0px 24px;
+    padding: 0px 0px 32px 0px;
+  }
+  
+  .available-job-card .description .line {
+    background: #d0d5dd;
+    border-radius: 4px;
+    height: 24px;
+    margin: 0px 0px 16px 0px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .available-job-card .description .line-1-1 {
+    width: calc(100% - 5%);
+  }
+  .available-job-card .description .line-2-1 {
+    width: calc(100% - 40%);
+  }
+  
+  .available-job-card .description .line-3-1 {
+    width: calc(100% - 25%);
+  }
+  
+  .available-job-card .description .line-1-2 {
+    width: calc(100%);
+  }
+  
+  .available-job-card .description .line::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      #d0d5dd 0%,
+      rgba(0, 0, 0, 0.07) 20%,
+      #d0d5dd 40%,
+      #d0d5dd 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 450px 400px;
+    animation: shimmer 1s linear infinite;
+  }
+  
+  /* Required skills card styles */
+  
+  .required-skills-card {
+    max-width: 488px;
+    width: 100%;
+    height: 144px;
+  }
+  .required-skills-card .description {
+    margin: 0px 24px;
+    padding: 0px 0px 32px 0px;
+  }
+  
+  .required-skills-card .skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+    column-gap: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .required-skills-card .skill .skill {
+    background: #d0d5dd;
+    border-radius: 4px;
+    height: 24px;
+    margin: 0px 0px 16px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .required-skills-card .skill img {
+    margin: 4px 0px 4px 10px;
+  }
+  
+  .required-skills-card .skill-1 {
+    width: calc(100% - 55%);
+  }
+  
+  .required-skills-card .skill-2 {
+    width: calc(100% - 75%);
+  }
+  
+  .required-skills-card .skill-3 {
+    width: calc(100% - 85%);
+  }
+  
+  .required-skills-card .skill-4 {
+    width: calc(100% - 45%);
+  }
+  
+  .required-skills-card .skill-5 {
+    width: calc(100% - 65%);
+  }
+  
+  .required-skills-card .skill-6 {
+    width: calc(100% - 60%);
+  }
+  
+  .required-skills-card .skill-7 {
+    width: calc(100% - 45%);
+  }
+  
+  .required-skills-card .skill-8 {
+    width: calc(100% - 65%);
+  }
+  
+  .required-skills-card .skill-9 {
+    width: calc(100% - 85%);
+  }
+  
+  .required-skills-card .skill-10 {
+    width: calc(100% - 60%);
+  }
+  
+  .required-skills-card .skill .skill::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      #d0d5dd 0%,
+      rgba(0, 0, 0, 0.09) 20%,
+      #d0d5dd 40%,
+      #d0d5dd 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 450px 400px;
+    animation: required-skill-shimmer 1s linear infinite;
+  }
+  
+  .required-skills-card span::before {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes required-skill-shimmer {
+    0% {
+      background-position: 24px 0;
+    }
+    100% {
+      background-position: 488px 0;
+    }
+  }
+  
