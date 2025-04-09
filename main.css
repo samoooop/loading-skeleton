@@ -1,91 +1,88 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 313px;
+  width: 100%;
+  height: 394px;
+  background: #f3f4f6;
+  padding: 24px 0px 24px 0px;
+  border-radius: 20px;
+  border: 1px solid #c5c9d3;
+}
+.card .description {
+  margin: 0px 24px;
+  padding: 0px 0px 80px 0px;
+}
+
+.card .description .line {
+  background: #c5c9d3;
+  border-radius: 4px;
+  height: 24px;
+  margin: 0px 0px 16px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .description .line-1-1 {
+  width: calc(100%);
+}
+.card .description .line-2-1 {
+  width: calc(100% - 30%);
+}
+
+.card .description .line-3-1 {
+  width: calc(100% - 10%);
+}
+
+.card .description .line-1-2 {
+  width: calc(100% - 45%);
+}
+.card .description .line-2-2 {
+  width: calc(100% - 65%);
+}
+
+.card .description .line-3-2 {
+  width: calc(100% - 65%);
+}
+
+.card .description .line-4-2 {
+  width: calc(100% - 65%);
+}
+
+.card .description .line::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #c5c9d3 0%,
+    rgba(0, 0, 0, 0.07) 20%,
+    #c5c9d3 40%,
+    #c5c9d3 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 450px 400px;
+  animation: shimmer 1s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -450px 0;
   }
-  body {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+  100% {
+    background-position: 450px 0;
   }
-  
-  .card {
-    max-width: 313px;
-    width: 100%;
-    height: 394px;
-    background: #F3F4F6;
-    padding: 24px 0px 24px 0px;
-    border-radius: 20px;
-    border: 1px solid #939EB4;
-    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
-      0px 1px 2px rgba(16, 24, 40, 0.06);
-  }
-  .card .description {
-    margin: 0px 24px;
-    padding: 0px 0px 80px 0px;
-  }
-  
-  .card .description .line {
-    background: #939EB4;
-    border-radius: 4px;
-    height: 24px;
-    margin: 0px 0px 16px 0px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .card .description .line-1-1 {
-    width: calc(100%);
-  }
-  .card .description .line-2-1 {
-    width: calc(100% - 30%);
-  }
-  
-  .card .description .line-3-1 {
-    width: calc(100% - 10%);
-  }
-  
-  .card .description .line-1-2 {
-    width: calc(100% - 45%);
-  }
-  .card .description .line-2-2 {
-    width: calc(100% - 65%);
-  }
-  
-  .card .description .line-3-2 {
-    width: calc(100% - 65%);
-  }
-  
-  .card .description .line-4-2 {
-    width: calc(100% - 65%);
-  }
-  
-  .card .description .line::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(
-      to right,
-      #939EB4 0%,
-      rgba(0, 0, 0, 0.07) 20%,
-      #939EB4 40%,
-      #939EB4 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 450px 400px;
-    animation: shimmer 1s linear infinite;
-  }
-  
-  @keyframes shimmer {
-    0% {
-      background-position: -450px 0;
-    }
-    100% {
-      background-position: 450px 0;
-    }
-  }
-  
+}
